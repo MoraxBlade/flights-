@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FlightWidget</class>
+ <widget class="QWidget" name="FlightWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1617</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="1">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="3" column="0">
+      <widget class="QLabel" name="labelEndCity">
+       <property name="text">
+        <string>终点：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="3">
+      <widget class="QPushButton" name="btnDeleteFlight">
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QDoubleSpinBox" name="dspbxPriceHigh"/>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="labelFoodName">
+       <property name="text">
+        <string>选择餐食：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QSpinBox" name="spxSeatMid"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelCompany">
+       <property name="text">
+        <string>航司：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QComboBox" name="cbxCompanyName"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>头等舱：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="2">
+      <widget class="QDoubleSpinBox" name="dspbxPriceLow"/>
+     </item>
+     <item row="11" column="3">
+      <widget class="QPushButton" name="btnAddFood">
+       <property name="text">
+        <string>餐食管理</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QDateTimeEdit" name="dtmEndTime"/>
+     </item>
+     <item row="9" column="3">
+      <widget class="QSpinBox" name="spxSeatLow"/>
+     </item>
+     <item row="12" column="2">
+      <widget class="QLineEdit" name="txtMessage"/>
+     </item>
+     <item row="6" column="3">
+      <widget class="QSpinBox" name="spxSeatHigh"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="labelMessage">
+       <property name="text">
+        <string>提示信息：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>经济舱：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>商务舱：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QComboBox" name="cbxPlaneName"/>
+     </item>
+     <item row="13" column="2">
+      <widget class="QPushButton" name="btnModifyFlight">
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QDoubleSpinBox" name="dspbxPriceMid"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelStartCity">
+       <property name="text">
+        <string>起点：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="txtStartCity"/>
+     </item>
+     <item row="12" column="3">
+      <widget class="QPushButton" name="btnOrder">
+       <property name="text">
+        <string>订票</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="labelEndTime">
+       <property name="text">
+        <string>终止时间：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelPlane">
+       <property name="text">
+        <string>飞机：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="txtEndCity"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="labelStartTime">
+       <property name="text">
+        <string>起始时间：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QPushButton" name="btnAddFlight">
+       <property name="text">
+        <string>增加</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="2">
+      <widget class="QComboBox" name="cbxFoodName"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QDateTimeEdit" name="dtmStartTime"/>
+     </item>
+     <item row="10" column="3">
+      <widget class="QRadioButton" name="rbnLow">
+       <property name="text">
+        <string>选择经济舱</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="2">
+      <widget class="QRadioButton" name="rbnMid">
+       <property name="text">
+        <string>选择商务舱</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QRadioButton" name="rbnHigh">
+       <property name="text">
+        <string>选择头等舱</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <widget class="QTableView" name="tableFlight">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>2</horstretch>
+       <verstretch>2</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="labelSearchCompany">
+       <property name="text">
+        <string>航司：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbxSearchCompanyName"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSearchStartCity">
+       <property name="text">
+        <string>起点：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtSearchStartCity"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSearchEndCity">
+       <property name="text">
+        <string>终点：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtSearchEndCity"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSearchStartTime">
+       <property name="text">
+        <string>起始时间：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dtmSearchStartTimeFrom"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dtmSearchStartTimeTo"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelSearchPriceLow">
+       <property name="text">
+        <string>最低票价：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="dspbxSearchPriceLowFrom">
+       <property name="maximum">
+        <double>99999.990000000005239</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="dspbxSearchPriceLowTo">
+       <property name="maximum">
+        <double>9999.989999999999782</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSearch">
+       <property name="text">
+        <string>搜索</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSearchClear">
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="labelTimeDelta">
+       <property name="text">
+        <string>航班起始时间+</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="dspxTimeDelta"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelUpdMess">
+       <property name="text">
+        <string>提示信息改为</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txtUpdMess"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnBatchModify">
+       <property name="text">
+        <string>批量修改</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnBatchDelete">
+       <property name="text">
+        <string>批量删除</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="btnWeather">
+     <property name="text">
+      <string>天气预报</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
